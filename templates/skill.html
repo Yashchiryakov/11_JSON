@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>skill</title>
+</head>
+<body>
+<p>Всего найдено {{count_skill}} кандидатов с таким навыком</p>
+{% for i in item %}
+<p><a href="/candidate/{{i.id}}">{{i.name}}</a></p>
+{% endfor %}
+</body>
+</html>
